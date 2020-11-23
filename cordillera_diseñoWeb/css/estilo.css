@@ -1,0 +1,430 @@
+/*paleta de colores */
+/*canvas */
+:root {
+  --claro: #d9ecf2;
+  --rosado: #f56a79;
+  --rojo: #ff414d;
+  --azul: #1aa6b7;
+}
+
+/*atributos del body */
+body{
+  background-color:var(--claro);
+  margin:0px;
+  padding:0px;
+}
+
+
+/* HEADER DE LA PAGINA */
+
+
+/*botones de redes sociales del costado de la pagina */
+div.redes{
+  position:absolute;
+  font-size:1rem;
+  /*background-color:var(--claro); */
+  margin-top:14rem;
+  margin-left: -2.4rem;
+}
+
+div.redes ul{
+  list-style:none;
+  position:absolute;
+  transform:translateY(-50%);
+  left:0%;
+}
+ /*texto que acompaña los iconos de redes */
+div.redes ul li a span{
+  color:var(--claro);
+  margin-bottom: 5rem;
+
+}
+
+
+ li a.redes-sociales{
+  font-size:3.5rem;
+  color:var(--azul);
+/*  background-color:antiquewhite; */
+  display:block;
+  margin-left: -2px;
+  height:60px;
+  width:60px;
+  border-radius: 0 25px 25px 0;
+  background-color: #fff;
+  border:2px solid #000;
+  transition: all 0.4s ease;
+  text-decoration: none;
+  position: relative;
+
+}
+
+a.redes-sociales span{
+
+}
+
+/*este hover del color en las redes */
+div.redes ul li a:hover{
+  width:200px;
+  color:var(--claro);
+
+}
+
+/* para q el texto avance pegado */
+div.redes ul li a:hover span{
+  left:0;
+  bottom: 15%;
+}
+
+div.redes ul li a span{
+font-family: 'Josefin Sans', sans-serif;
+transition: left 0.4s ease;
+padding: 0 30px 0 15px;
+position: relative;
+left: -190px;
+font-size: 2.1rem;
+text-align: center;
+padding-top: -2rem;
+  }
+
+div.redes ul li a i {
+  position:absolute;
+  transform:translateY(-50%);
+  top: 50%;
+  right:9px;
+  font-size:2.5rem;
+}
+
+/*facebook */
+div.redes ul li .fb{
+  border-color: var(--azul);
+  opacity:80%;
+}
+
+div.redes ul li .fb:hover{
+  background-color:var(--azul);
+  opacity:100%;
+}
+
+/* youtube*/
+
+div.redes ul li .youtube {
+  background-color:var(--claro);
+  border-color: var(--rojo);
+  color: var(--rojo);
+  opacity:80%;
+}
+
+
+div.redes ul li .youtube:hover{
+  background-color:var(--rojo);
+  opacity:100%;
+}
+
+
+/* HEADER DE LA PAGINA =======================*/
+.header{
+  display: flex;
+  position:absolute;
+  margin-top:5%;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  /*aca cambiar posiscion del header */
+  margin-left:10%;
+  margin-right:10%;
+}
+/*aca esta la caja del div */
+header div.limite{
+  background-color:var(--rojo);
+  border-radius: 5rem;
+  padding: 2rem 3rem;
+
+}
+nav ul{
+  display: flex;
+}
+nav.header_nav{
+  display: flex;
+}
+
+nav ul li{
+  display: block;
+
+}
+
+ul li a.header_nav_enlace{
+  color: var(--claro);
+/*  background-color: black;*/
+  padding-top: 1.1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-decoration: none;
+}
+
+
+ul li a.header_nav_enlace:hover{
+  color: var(--rojo);
+  background-color:var(--claro);
+}
+
+/*side bar */
+aside.header_nav_submenu{
+  padding-top: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+aside.header_nav_submenu a{
+  color: var(--claro);
+  font-size: 2rem;
+  text-decoration: none;
+  position:relative;
+}
+
+
+aside.header_nav_submenu a span{
+font-size:1rem;
+position: absolute;
+margin-top: 0.3rem;
+color: var(--rojo);
+padding-left: 0.5rem;
+font-weight: bold;
+opacity:0%;
+font-size:1.5rem;
+
+}
+
+aside.header_nav_submenu a:hover span{
+  opacity: 100%;
+}
+
+
+
+/*aca termina el header ====================================*/
+
+/*IMAGEN DE FONDO PARA EL HEADER */
+div.imgFondo{
+  display: block;
+}
+
+
+
+
+div.texto_header{
+/*  background-color:var(--rojo);*/
+  position: absolute;
+  color:var(--claro);
+  margin-top: 28%;
+  margin-left: 15%;
+  margin-right: 15%;
+  font-size:2.5rem;
+  font-weight:bold;
+  text-align: center;
+
+}
+
+button.head{
+  background-color:var(--azul);
+  color:var(--claro);
+  padding:1.5rem;
+  font-weight:bold;
+  font-size:1rem;
+}
+button.head:hover{
+  cursor: pointer;
+
+}
+
+#fondo img{
+  width: 90rem;
+  height:40rem;
+
+}
+
+
+/*
+#fondo:before {
+      	content:'';
+      	position: absolute;
+        top: 0;
+	       bottom: 0;
+	        left: 0;
+	         right: 0;
+	          background-color: rgba(0,0,0,0.6);
+}
+*/
+
+
+
+/*  SECCION 2 DEL INICIO*/
+
+ section.lista_actividades div h2{
+  background-color: var(--rojo);
+  padding: 3rem 38%;
+  font-size: 1.5rem;
+  color: var(--claro);
+  margin-top: 0;
+
+}
+
+div.titulo_seccion2{
+
+}
+ /*   contenido de la seccion 2 inicio*/
+
+/*  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3% 33.3%;
+  display: inline-block;
+*/
+
+
+
+.todas_las_actividades li{
+    display:inline-grid;
+    background-color:slategray;
+    margin-left: 3rem;
+
+}
+
+div .actividad{
+  display:flex;
+}
+
+
+/* tamaños de las imagenes*/
+div .actividad img{
+  width: 15rem;
+  height: 15rem;
+}
+
+div .actividad{
+  padding-top: 20%;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 1rem;
+  cursor: pointer;
+}
+
+/* texto en las imagenes*/
+div .actividad p{
+  color: var(--claro);
+  position: absolute;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-top: 5rem;
+  padding-left: 0.7rem;
+  text-decoration: underline;
+}
+
+/* hover de las imagenes */
+div .actividad:hover img {
+  border: 8px solid var(--azul);
+  transition: 0.5s;
+  border-radius: 1rem;
+}
+
+
+
+
+/*SECCION 3 DEL MAIN */
+.seccion-tres{
+  margin-top:5rem;
+}
+
+.seccion3 nav{
+  position:absolute;
+  margin-left:15%;
+  margin-top:10%;
+}
+
+.seccion3 nav ul li a{
+  margin: 2rem 2rem 1rem 6rem;
+}
+
+.seccion3 nav ul li a i{
+  font-size: 11rem;
+  color: var(--claro);
+}
+
+.seccion3 nav ul li a span{
+  color: var(--claro);
+  position: absolute;
+  font-size: 1.5rem;
+  opacity: 0%;
+}
+
+.seccion3 nav ul li a:hover span{
+  opacity: 100%;
+}
+
+.sombra img{
+  display:block;
+  width:120%;
+  height:27rem;
+  margin:-6px 6px 6px -6px;
+}
+
+.sombra img::before{
+  content: '';
+
+}
+
+/* CUARTA SECCION */
+/*=====PROMOCIONES  Y DESCUENTOS========= */
+.titulo_seccion4 h1{
+  color: var(--azul);
+  margin-left: 5%;
+  font-size:2rem;
+}
+.contenido-seccion4 {
+  background-color:var(--azul);
+  width: 100%;
+  height:30rem;
+}
+
+
+
+
+/* FOOTER */
+
+footer.footer{
+  background-color: black;
+
+}
+
+.foot nav ul{
+  display: block;
+  text-align: center;
+  padding-top: 3rem;
+}
+
+.foot nav ul li{
+  padding: 0.5rem;
+}
+.foot nav ul li a{
+  color:var(--claro);
+  text-decoration: none;
+}
+
+.foot nav ul li a:hover{
+  color:darkorange;
+
+}
+
+
+/* redes del footer*/
+li.mis-redes a {
+  font-size: 2.5rem;
+  padding: 3rem 3rem;;
+}
+
+
+
+/*copyright */
+.whit p{
+  color: antiquewhite;
+  background-color: grey;
+  text-align: center;
+  padding-bottom: 1rem;
+  padding-top:1rem;
+}
