@@ -120,17 +120,28 @@ div.redes ul li .youtube:hover{
   opacity:100%;
 }
 
+/* Instagram */
+div.redes ul li .instagram {
+  background-color:var(--claro);
+  border-color: var(--rojo);
+  color: var(--rojo);
+  opacity:80%;
+}
+
+div.redes ul li .instagram:hover{
+  background-color:var(--rojo);
+  opacity:100%;
+}
+
 
 /* HEADER DE LA PAGINA =======================*/
 .header{
   display: flex;
   position:absolute;
-  margin-top:5%;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  margin-top:1%;
   /*aca cambiar posiscion del header */
-  margin-left:10%;
-  margin-right:10%;
+  margin-left:20%;
+  margin-right:5%;
 }
 /*aca esta la caja del div */
 header div.limite{
@@ -154,10 +165,10 @@ nav ul li{
 ul li a.header_nav_enlace{
   color: var(--claro);
 /*  background-color: black;*/
-  padding-top: 1.1rem;
-  padding-bottom: 1rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   text-decoration: none;
 }
 
@@ -165,6 +176,10 @@ ul li a.header_nav_enlace{
 ul li a.header_nav_enlace:hover{
   color: var(--rojo);
   background-color:var(--claro);
+  border-color: var(--rojo);
+  opacity: 70%;
+  transition: 0.2s ease;
+  box-shadow: 0px 0px 5px var(--rojo) inset;
 }
 
 /*side bar */
@@ -185,17 +200,22 @@ aside.header_nav_submenu a{
 aside.header_nav_submenu a span{
 font-size:1rem;
 position: absolute;
-margin-top: 0.3rem;
-color: var(--rojo);
+margin-top: 0.1rem;
+color: var(--claro);
 padding-left: 0.5rem;
+padding-right: 0.5rem;
 font-weight: bold;
 opacity:0%;
 font-size:1.5rem;
-
+border: 5px solid var(--claro);
+border-radius: 5rem;
+background-color:var(--rojo);
+margin-left:1px;
 }
 
 aside.header_nav_submenu a:hover span{
-  opacity: 100%;
+  opacity: 80%;
+
 }
 
 
